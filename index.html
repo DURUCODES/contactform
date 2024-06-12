@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <h2>  Contact Us</h2>
+      <form>
+        <!--NAME INDEX STARTS HERE-->
+        <div class="nameindex">
+          <div class="firstname-wraper">
+            <label class="firstname"> First Name  <small class="star">&middot;</small></label>
+          <input class="firstnameinp" type="text">
+          <span class="firtsnamerror"> This field is required</span>
+          </div>
+          <div class="lastname-wrapper">
+            <label class="lastname">Last Name <small class="star">&middot;</small></label>
+            <input class="lastnameinp" type="text">
+            <span class="lastnamerror"> This field is required</span>
+          </div>
+        </div>
+           <!--NAME INDEX ENDS HERE-->
+
+
+
+            <!--EMAIL STARTS HERE-->
+        <div class="email-wrapper">
+       <label class="email">Email Address  <small class="star">&middot;</small></label>
+       <input class="emailinp" type="email">
+       <span class="emailerror">  This field is required</span>
+        </div>
+         <!--EMAIL ENDS HERE-->
+
+        <!--QUERRY TYPE STARTS HERE-->
+        <div class="querytype">
+          <label> Query Type <small class="star">&middot;</small></label>
+          <div class="query-btn">
+
+            <div class="btn1">
+              <button class="generalbtn"> <img src="./assets/images/icon-radio-selected.svg" class="checkedradioimg"><input id="generalradioinp" class="radioinp"type="radio"><p>General Enquiry</p></button>
+              <span class="errorbtngeneral"> Please select a query type</span>
+            </div>
+            <div class="btn2">
+
+            <button id="supportbtn"> <img src="./assets/images/icon-radio-selected.svg"  class="checkedradioimg" id="radioimg2"><input   id="supportradioinp"class="radioinp"type="radio"> Support Request</button>
+              <span class="errorbtnsupport"> Please select a query type</span>
+            </div>
+          </div>
+          
+        </div>
+         <!--QUERRY TYPE ENDS HERE-->
+
+          <!--MESSAGE TYPE STARTS HERE-->
+        <div class="message">
+          <label>Message <small class="star">&middot;</small></label>
+          <input class="textarea" type="text">
+          <span class="errortextarea"> This field is required</span>
+        </div>
+         <!--MESSAGE TYPE ENDS HERE-->
+
+         <!--checkbox TYPE starts HERE-->
+         <div class="aggrement">
+          <div class="aggrementbox">
+            <input type="checkbox" class="aggrementinp"><p> I consent to being contacted by the team</p>
+          </div>
+        <span class="aggrementerror">
+          To submit this form, please consent to being contacted
+        </span>
+         </div>
+         <!--checkbox TYPE starts HERE-->
+
+         <div class="btnsss">
+          <button class="submit">Submit</button>
+         </div>
+      </form>
+      
+    </div>
+   
+  </div>
+  <div class="card2">
+    <div class="thankyou-message">
+      <div class="heads">
+        <img src="./assets/images/icon-success-check.svg">
+        <h3>Message Sent!</h3>
+      </div>
+      <p> Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </div>
+  
+
+
+ 
+  
+
+  
+
+  
+
+
+ 
+  
+ 
+  
+
+  
+ 
+
+ 
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
